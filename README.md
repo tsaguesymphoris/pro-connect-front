@@ -52,3 +52,13 @@ export default tseslint.config({
   },
 })
 ```
+
+## API Configuration
+
+Create a `.env` file at the project root and define the backend URL used by Axios:
+
+```bash
+VITE_API_URL=http://localhost:3000
+```
+
+Without this variable, requests like login will target the current origin and may fail.
