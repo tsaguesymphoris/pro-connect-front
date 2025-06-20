@@ -16,9 +16,30 @@
         "maid": "Femme de ménage",
         "painter": "Peintre",
         "carpenter": "Charpentier",
-      "other": "Autre"
-    },
-    "createAccount": "Créer un compte",
-    "noAccount": "Pas encore de compte ?"
+        "other": "Autre"
+      },
+      "genders": {
+        "male": "Homme",
+        "female": "Femme",
+        "other": "Autre"
+      },
+      "roles": {
+        "client": "Client",
+        "provider": "Prestataire"
+      },
+      "register": {
+        "title": "Inscription",
+        "name": "Nom",
+        "email": "Email",
+        "phone": "Téléphone",
+        "password": "Mot de passe",
+        "confirmPassword": "Confirmer le mot de passe",
+        "momoNumber": "Numéro MoMo",
+        "country": "Pays",
+        "uploadPhoto": "Choisir une photo",
+        "changePhoto": "Changer la photo"
+      },
+      "createAccount": "Créer un compte",
+      "noAccount": "Pas encore de compte ?"
   }
     

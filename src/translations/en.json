@@ -18,6 +18,27 @@
         "carpenter": "Carpenter",
         "other": "Other"
       },
+      "genders": {
+        "male": "Male",
+        "female": "Female",
+        "other": "Other"
+      },
+      "roles": {
+        "client": "Client",
+        "provider": "Provider"
+      },
+      "register": {
+        "title": "Register",
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "password": "Password",
+        "confirmPassword": "Confirm password",
+        "momoNumber": "MoMo Number",
+        "country": "Country",
+        "uploadPhoto": "Upload photo",
+        "changePhoto": "Change photo"
+      },
       "createAccount": "Create an account",
       "noAccount": "No account yet?"
 }
