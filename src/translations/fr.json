@@ -16,7 +16,9 @@
         "maid": "Femme de ménage",
         "painter": "Peintre",
         "carpenter": "Charpentier",
-        "other": "Autre"
-      }
-    }
+      "other": "Autre"
+    },
+    "createAccount": "Créer un compte",
+    "noAccount": "Pas encore de compte ?"
+  }
     

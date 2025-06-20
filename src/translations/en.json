@@ -17,6 +17,8 @@
         "painter": "Painter",
         "carpenter": "Carpenter",
         "other": "Other"
-      }
-    }
+      },
+      "createAccount": "Create an account",
+      "noAccount": "No account yet?"
+}
     
