@@ -20,13 +20,19 @@ export const useAuthStore = create<AuthState>((set) => ({
       user: null,
       token: localStorage.getItem('token'),
       login: async (email, password) => {
-            const res = await api.post('/auth/login', { email, password });
-            const { token } = res.data;
-            localStorage.setItem('token', token);
-            set({ token });
-            // Fetch /me profile
-            const me = await api.get('/auth/me').then((r) => r.data.data);
-            set({ user: me });
+            try {
+                  const res = await api.post('/auth/login', { email, password });
+                  const { token } = res.data;
+                  localStorage.setItem('token', token);
+                  set({ token });
+                  // Fetch /me profile
+                  const me = await api.get('/auth/me').then((r) => r.data.data);
+                  set({ user: me });
+            } catch (err: any) {
+                  console.error('Login failed', err);
+                  alert(err?.response?.data?.message || 'Erreur lors de la connexion');
+                  throw err;
+            }
       },
       logout: () => {
             localStorage.removeItem('token');
