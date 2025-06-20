@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { useAuthStore } from '../../store/auth';
 import cls from './Login.module.scss';
 
@@ -8,6 +9,7 @@ const Login = () => {
       const [password, setPassword] = useState('');
       const login = useAuthStore((s) => s.login);
       const nav = useNavigate();
+      const { t } = useTranslation();
 
       const submit = async (e: React.FormEvent) => {
             e.preventDefault();
@@ -33,6 +35,10 @@ const Login = () => {
                         onChange={(e) => setPassword(e.target.value)}
                   />
                   <button type="submit">Login</button>
+                  <p className={cls.registerLink}>
+                        {t('noAccount')}{' '}
+                        <Link to="/register">{t('createAccount')}</Link>
+                  </p>
             </form>
       );
 };
