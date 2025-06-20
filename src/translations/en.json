@@ -1,0 +1,22 @@
+{
+      "searchProfession": "Search a profession…",
+      "tasks": "Tasks",
+      "profile": "Profile",
+      "logout": "Logout",
+      "login": "Login",
+      "validated": "Validated",
+      "viewProfile": "View profile",
+      "pendingTitle": "Your account is being validated",
+      "pendingBody": "An administrator will review your documents soon.",
+      "professions": {
+        "plumber": "Plumber",
+        "electrician": "Electrician",
+        "hairdresser": "Hairdresser",
+        "mechanic": "Mechanic",
+        "maid": "Housekeeper",
+        "painter": "Painter",
+        "carpenter": "Carpenter",
+        "other": "Other"
+      }
+    }
+    

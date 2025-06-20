@@ -1,0 +1,22 @@
+{
+      "searchProfession": "Rechercher un professionnel…",
+      "tasks": "Tâches",
+      "profile": "Profil",
+      "logout": "Se déconnecter",
+      "login": "Se connecter",
+      "validated": "Validé",
+      "viewProfile": "Voir le profil",
+      "pendingTitle": "Votre compte est en cours de validation",
+      "pendingBody": "Un administrateur examinera vos informations sous peu.",
+      "professions": {
+        "plumber": "Plombier",
+        "electrician": "Électricien",
+        "hairdresser": "Coiffeur",
+        "mechanic": "Mécanicien",
+        "maid": "Femme de ménage",
+        "painter": "Peintre",
+        "carpenter": "Charpentier",
+        "other": "Autre"
+      }
+    }
+    

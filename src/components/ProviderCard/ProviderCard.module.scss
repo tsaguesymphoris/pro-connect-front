@@ -1,0 +1,30 @@
+/* ...styles existants… */
+
+/* -------------------------------------------
+   CTA button (hover darken) – local version
+   ------------------------------------------- */
+   @use '../../theme/variables.module.scss' as *;
+
+   .cta {
+     background: var(--color-primary);
+     color: #fff;
+     padding: 0.35rem 0.9rem;
+     border-radius: 0.45rem;
+     font-size: 0.875rem;
+     text-decoration: none;
+     transition: background $transition-fast, filter $transition-fast;
+   
+     /* Modern: color-mix() */
+     @supports (background: color-mix(in srgb, red, black)) {
+       &:hover {
+         background: color-mix(in srgb, var(--color-primary) 90%, black);
+       }
+     }
+     /* Fallback */
+     @supports not (background: color-mix(in srgb, red, black)) {
+       &:hover {
+         filter: brightness(0.9);
+       }
+     }
+   }
+   

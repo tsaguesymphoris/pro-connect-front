@@ -1,0 +1,35 @@
+.chat {
+      display: flex;
+      flex-direction: column;
+      height: calc(100vh - 140px); // header + footer approx
+    
+      .messages {
+        flex: 1 1 auto;
+        padding: 1rem;
+        overflow-y: auto;
+        background: var(--color-bg-alt);
+      }
+    
+      .input {
+        display: flex;
+        gap: 0.5rem;
+        padding: 0.75rem;
+        border-top: 1px solid #ddd;
+    
+        input {
+          flex: 1;
+          padding: 0.5rem 0.75rem;
+          border: 1px solid #ccc;
+          border-radius: 0.4rem;
+        }
+        button {
+          background: var(--color-primary);
+          color: #fff;
+          border: none;
+          border-radius: 0.4rem;
+          padding: 0 1rem;
+          cursor: pointer;
+        }
+      }
+    }
+    
